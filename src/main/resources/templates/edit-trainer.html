@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{template.html}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+
+    <section   layout:fragment="content">
+        login success.<br>
+        Welcome
+        <label th:text="${email}">
+
+        </label>
+
+        <form action="show-trainers" method="post">
+            <input type="submit" value="showTrainers">
+
+        </form>
+        <br>
+        <label th:text="${trainers}">
+
+        </label>
+        <form action="edit-trainers" method="post">
+
+            <input type="hidden" th:value="${id}" name="id">
+            <label>
+                Trainer name
+            </label><br>
+            <input type="text" name="name"><br>
+            <label>
+                Pokemon
+            </label><br>
+            <input type="radio" id="pikachu" name="pokemon" value="pikachu">
+            <label for="pikachu">pikachu</label><br>
+
+            <input type="radio" id="charmander" name="pokemon" value="charmander">
+            <label for="charmander">charmander</label><br>
+
+            <input type="radio" id="diglett" name="pokemon" value="diglett">
+            <label for="diglett">diglett</label>
+
+            <input type="submit" value="edit">
+
+        </form>
+        <br>
+
+
+    </section>
+
+
+
+
+</body>
+</html>

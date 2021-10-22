@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <title>main site</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <style>
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="logo">
+            <h1>POKEMON</h1>
+        </div>
+
+        <div id="nav">
+            Menu<br>
+            <a href="booster" class="link">booster</a> <br><br>
+            <a href="" class="link">option2</a> <br><br>
+
+        </div>
+        <section id="content" layout:fragment="content">
+           Welcome to pokemon site
+        </section>
+
+        <div id="ad" layout:fragment="content2">
+
+            <a href="register" class="link" >Register</a><br><br>
+            <a href="login" class="link" >Login</a><br><br>
+
+        </div>
+
+        <div id="footer">
+            Jarzewicz Paweł
+        </div>
+
+
+
+    </div>
+</body>
+</html>

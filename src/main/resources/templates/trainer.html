@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{template.html}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+
+<body>
+
+
+
+    <section layout:fragment="content">
+        Create your trainer
+
+        <form action="/trainer-send" method="post">
+            <label>
+                name
+            </label>
+            <input type="text" name="name"><br>
+            <label>
+                Starting pokemon
+            </label><br>
+            <input type="radio" id="pikachu" name="pokemon" value="pikachu">
+            <label for="pikachu">pikachu</label><br>
+
+            <input type="radio" id="charmander" name="pokemon" value="charmander">
+            <label for="charmander">charmander</label><br>
+
+            <input type="radio" id="diglett" name="pokemon" value="diglett">
+            <label for="diglett">diglett</label>
+
+            <br><input type="submit" value="accept"><br>
+
+        </form>
+
+    </section>
+
+
+
+</body>
+</html>

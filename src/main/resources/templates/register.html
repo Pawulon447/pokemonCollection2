@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{template.html}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <style>
+
+  </style>
+
+</head>
+<body>
+
+
+
+
+  <div id="ad" layout:fragment="content2">
+    <form action="/register-send" method="post">
+      <label>
+        email
+      </label>
+      <input type="email" name="email">
+      <label>
+        password
+      </label>
+      <input type="password" name="password1">
+      <label>
+        repeat password
+      </label>
+      <input type="password" name="password2">
+      <input type="submit" value="accept">
+
+    </form>
+
+  </div>
+
+
+
+
+</body>
+</html>

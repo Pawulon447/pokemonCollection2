@@ -1,0 +1,99 @@
+body
+{
+	background: url(photo.png);
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Verdana;
+	font-size: 20px;
+	color: orange;	
+}
+
+h1
+{
+	font-size:48px;
+	color: white;
+}
+/* Nieodwiedzony link*/
+a:link
+{
+	color: #E9C841;
+} 
+
+/* odwiedzony link*/
+a:visited
+{
+	color: #E9C841;
+} 
+
+/* link po najechaniu kursorem*/
+a:hover
+{
+	color:red;
+	cursor: pointer;
+} 
+
+#container
+	{
+		background-color: grey;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		align: center;
+		opacity: 0.99;
+	}
+	#logo
+	{
+		background-color: orange;
+		background-width: 2000px;
+		color: orange;
+		text-align: center;
+		padding: 15px;
+		letter-spacing:3px;
+		font-weight: 900;
+		border-bottom: 3px solid #444444;
+		border-top: 2px solid black;
+		border-left: 2px solid black;
+		border-right: 2px solid black;
+	}
+	
+	#nav
+	{
+		float: left;
+		background-color: #124257;
+		color: orange;
+		width: 150px;
+		min-height: 1575px;
+		border-right: 2px solid #444444;
+		border-left: 2px solid black;
+	}
+	
+	#content
+	{
+		float: left;
+		padding: 20px;
+		width: 600px;
+	}
+	
+	#ad
+	{
+		background-color: #4B7AA9;
+		color: black;
+		float: left;
+		width: 162px;
+		min-height: 1575px;
+		padding: 10px;
+		border-left: 2px solid black;
+		border-right: 2px solid black;
+		
+	}
+	
+	#footer
+	{
+		clear: both;
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 20px;
+	}
+
+	
